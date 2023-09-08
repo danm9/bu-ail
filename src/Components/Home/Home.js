@@ -1,8 +1,11 @@
 import React from "react";
 import { NavBar } from "../NavBar/NavBar";
-// import { Footer } from "../Footer/Footer";
+import { Footer } from "../Footer/Footer";
+import Wordcloud from "../Images/WordCloud.png";
+import BUAIL from "../Images/BUAIL.PNG";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Home.css";
+import { Container, Card, Button } from "react-bootstrap";
 
 export function Home() {
   return (
@@ -19,17 +22,54 @@ export function Home() {
 
       <NavBar />
       <div id="container">
-        <div className="d-flex align-items-center flex-column">
+        <Container className="d-flex align-items-center flex-column">
           <h1 className="mt-3 mb-3 fw-bold">Welcome to BU AIL</h1>
-        </div>
-        <p></p>
+          <img alt="" src={Wordcloud}></img>
+          <Container className="d-flex align-items-center flex-column mt-3">
+            <h2 className="text-center">Upcoming Events</h2>
 
-        <div
-          id="button-group"
-          className="d-flex justify-content-evenly align-center mt-5 pb-3"
-        ></div>
+            <Card className="w-50 m-auto mt-3">
+              <Card.Header
+                style={{
+                  backgroundColor: "#BD3430",
+                  color: "2C2926",
+                  fontWeight: "bold",
+                }}
+              >
+                Featured
+              </Card.Header>
+              <Card.Img variant="top" src={BUAIL} />
+              <Card.Body>
+                <Card.Title>Event Name</Card.Title>
+                <Card.Text>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </Card.Text>
+                <Button
+                  className="fw-bold"
+                  style={{
+                    backgroundColor: "#2C2926",
+                    borderColor: "#2C2926",
+                  }}
+                >
+                  REGISTER
+                </Button>
+              </Card.Body>
+            </Card>
+            <Button
+              className="fw-bold mt-2"
+              style={{
+                backgroundColor: "#BD3430",
+                borderColor: "#BD3430",
+                color: "#2c2926",
+              }}
+            >
+              MORE EVENTS
+            </Button>
+          </Container>
+        </Container>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
