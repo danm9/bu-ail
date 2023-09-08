@@ -15,7 +15,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* <Route path="/events" component={Events} /> */}
-        <Route path="/" element={<Home />} />
+        <Route path="/bu-ail" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
