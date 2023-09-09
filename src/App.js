@@ -2,6 +2,8 @@ import React from "react";
 import TagManager from "react-gtm-module";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./Components/Home/Home.js";
+import { Events } from "./Components/Events/Events.js";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -14,7 +16,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route path="/events" component={Events} /> */}
+        <Route path="/events" element={<Events />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
