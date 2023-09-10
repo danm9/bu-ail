@@ -24,8 +24,12 @@ export function Home() {
       <div id="container">
         <Container className="d-flex align-items-center flex-column">
           <h1 className="mt-3 mb-3 fw-bold">Welcome to BU AIL</h1>
-          <img alt="" src={Wordcloud}></img>
-          <Container className="d-flex align-items-center flex-column mt-3">
+          <img
+            alt="Word Cloud"
+            src={Wordcloud}
+            style={{ height: "35rem" }}
+          ></img>
+          <Container className="d-flex align-items-center flex-column mt-5">
             <h2 className="text-center">Upcoming Events</h2>
 
             <Card className="w-50 m-auto mt-3">
