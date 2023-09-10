@@ -4,7 +4,7 @@ import "./Footer.css";
 export function Footer() {
   return (
     <div
-      className="d-flex flex-column align-items-center justify-content-center mt-3"
+      className="d-flex flex-column align-items-center justify-content-center mt-4"
       id="footer-container"
     >
       <p className="m-1">
