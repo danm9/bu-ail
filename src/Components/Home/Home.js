@@ -4,7 +4,7 @@ import { Footer } from "../Footer/Footer";
 import Wordcloud from "../Images/WordCloud.png";
 import BUAIL from "../Images/BUAIL.PNG";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./Home.css";
+import "../Styles/Styles.css";
 import { Container, Card, Button } from "react-bootstrap";
 
 export function Home() {
@@ -23,7 +23,8 @@ export function Home() {
       <NavBar />
       <div id="container">
         <Container className="d-flex align-items-center flex-column">
-          <h1 className="mt-3 mb-3 fw-bold">Welcome to BU AIL</h1>
+          <h1 className="mt-3 fw-bold">Boston University</h1>
+          <h3 className="mb-3 fw-bold">Agile Innovation Lab</h3>
           <img
             alt="Word Cloud"
             src={Wordcloud}

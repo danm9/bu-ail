@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import Logo from "../Images/Logo.png";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./NavBar.css";
+import "../Styles/Styles.css";
 
 export function NavBar() {
   const ColoredLine = () => (
@@ -23,26 +23,25 @@ export function NavBar() {
         <Navbar.Brand href="/">
           <img alt="" src={Logo} id="logo"></img>
         </Navbar.Brand>
-        <Nav className="ms-auto fs-6">
+        <Nav className="ms-auto fs-6 fw-bold">
           <Nav.Link href="/" id="link">
             HOME
           </Nav.Link>
         </Nav>
         <ColoredLine />
-
-        <Nav className="fs-6">
+        <Nav className="fs-6 fw-bold">
           <Nav.Link href="/about" id="link">
             ABOUT
           </Nav.Link>
         </Nav>
         <ColoredLine />
-        <Nav className="fs-6">
+        <Nav className="fs-6 fw-bold">
           <Nav.Link href="/events" id="link">
             EVENTS
           </Nav.Link>
         </Nav>
         <ColoredLine />
-        <Nav className="fs-6">
+        <Nav className="fs-6 fw-bold">
           <Nav.Link href="/contact" id="link">
             CONTACT US
           </Nav.Link>
