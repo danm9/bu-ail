@@ -4,7 +4,8 @@ import { Footer } from "../Footer/Footer";
 // import Wordcloud from "../Images/WordCloud.png";
 // import BUAIL from "../Images/BUAIL.PNG";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./Events.css";
+import "../Styles/Styles.css";
+
 // import { Container, Card, Button } from "react-bootstrap";
 
 export function Events() {
